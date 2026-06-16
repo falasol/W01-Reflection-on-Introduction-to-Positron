@@ -1,7 +1,7 @@
 ---
 title: "W06-Reflection Essay-Introduction to Positron"
 author: "Frank Renn"
-date: "`Sys.time()`"
+date: today
 format: 
   html: 
     toc: true
@@ -9,16 +9,11 @@ format:
     number-sections: false
     code-link: true
     embed-resources: true
+    output-file: "index.html"
 editor: visual
 execute: 
   freeze: auto
 ---
-
-::: callout-tip
-## Document Setup Overview
-
-This document serves as the reflection essay for Week 06. It utilizes various Quarto formatting features, including callout blocks, blockquotes, cross-referencing, footnotes, and tables to organize the responses.
-:::
 
 ## 1. Positron vs. RStudio
 
@@ -26,9 +21,7 @@ This document serves as the reflection essay for Week 06. It utilizes various Qu
 
 Compared to RStudio, what I appreciate most about Positron is how it perfectly bridges the gap between data science-specific functionalities and the flexibility of modern software development environments. It retains the highly useful environment variables pane and interactive data viewers from RStudio but breaks the single-language barrier by natively supporting both **R** and **Python** concurrently.
 
-For instance, the video highlights how the data viewer can convert UI filtering actions directly into code (like `pandas`). In a standard analytical workflow—whether manipulating data with `tidyverse`, writing SQL queries, or setting up complex marketing attribution logic—having an IDE that handles multiple languages without losing the rich data exploration tools of RStudio is a massive upgrade in efficiency.[^1]
-
-[^1]: Because Positron leverages the open-source framework of VS Code, a vast library of familiar developer extensions is also readily available.
+For instance, the video highlights how the data viewer can convert UI filtering actions directly into code (like `pandas`). In a standard analytical workflow—whether manipulating data with `tidyverse`, writing SQL queries, or setting up complex marketing attribution logic—having an IDE that handles multiple languages without losing the rich data exploration tools of RStudio is a massive upgrade in efficiency.
 
 ## 2. AI Integration in Positron
 
@@ -63,11 +56,9 @@ The Positron Assistant has been exceptionally beneficial due to its context-awar
 
 ![GitHub Education Approval Screenshot](github_education_screenshot.jpg){#fig-copilot width="80%"}
 
-*(Self-Correction Note: Make sure to save your actual screenshot as `github_education_screenshot.jpg` in the same folder as this project so the image renders properly.)*
-
 After playing around with GitHub Copilot, I find it highly **helpful**, though it requires mindful usage. Its autocomplete capabilities are incredibly precise when tackling repetitive data cleaning tasks or drafting boilerplate data architectures. It effectively predicts the variable names and logic I intend to use, which allows me to focus my mental energy on higher-level strategy and analytical design.
 
-However, it can be mildly *distracting* if left unchecked. Occasionally, it aggressively suggests large blocks of code that are syntactically correct but logically misaligned with the specific outcome I am aiming for. If I mindlessly hit `Tab` to accept, I end up spending more time reverse-engineering and fixing the code. Therefore, treating it as an active "co-pilot" rather than an "auto-pilot"—where I remain strictly in charge of code review—yields the best and most efficient results.
+However, it can be mildly *distracting* if left unchecked. Occasionally, it aggressively suggests large blocks of code that are syntactically correct but logically misaligned with the specific outcome I am aiming for. If I mindlessly hit `Tab` to accept, I end up spending more time reverse-engineering and fixing the code. Therefore, treating it as an active "co-pilot" rather than an "auto-pilot", where I remain strictly in charge of code review, yields the best and most efficient results.
 
 ## 5. Deployment
 
@@ -75,18 +66,5 @@ However, it can be mildly *distracting* if left unchecked. Occasionally, it aggr
 
 The rendered HTML report has been successfully deployed. You can view the live page below:
 
-::: callout-important
-## GitHub Pages URL
+GitHub Pages URL: [https://falasol.github.io/W01-Reflection-on-Introduction-to-Positron/](https://falasol.github.io/W01-Reflection-on-Introduction-to-Positron/)
 
-\[Insert your GitHub Pages URL here, e.g., `https://yourusername.github.io/Intro-Positron/`\]
-:::
-
-### Code Demonstration
-
-To fulfill the code visibility and hiding requirements of the rubric, here is a small demonstration of folded code:
-
-\`\`\`{r} #\| code-fold: true #\| warning: false #\| message: false
-
-# This is a sample code block to demonstrate the code-fold feature in Quarto
-
-library(ggplot2) ggplot(mtcars, aes(x = wt, y = mpg)) + geom_point(color = "blue") + theme_minimal() + labs(title = "Sample Plot: MPG vs Weight", x = "Weight", y = "Miles Per Gallon")
